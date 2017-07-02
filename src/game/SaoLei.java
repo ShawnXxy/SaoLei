@@ -19,7 +19,7 @@ public class SaoLei implements ActionListener {
 	Container container = new Container(); // game field
 	final int rows = 20;
 	final int cols = 20;
-	final int bombs = 30; // number of bombs
+	final int bombs = 3; // number of bombs
 	JButton[][] fields = new JButton[rows][cols];
 	int[][] count = new int[rows][cols]; // bombs possible position
 	final int bombCode = 10;
@@ -221,8 +221,8 @@ public class SaoLei implements ActionListener {
 					return;
 				}
 			}
-			JOptionPane.showMessageDialog(window, "You Win!");
 		}
+		JOptionPane.showMessageDialog(window, "You Win!");
 	}
 
 	public static void main(String[] args) {
